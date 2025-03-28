@@ -22,6 +22,7 @@
     <link rel="canonical" href="https://thewebsite.com" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" /> <!-- main css style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animations style sheet -->
+    <link rel="stylesheet" href="style.css" />
 <!-- custom css to override the animations --><style> 
 
 		h1 {
@@ -48,19 +49,23 @@
     <form class="animate__animated animate__fadeInUpBig animate__delay-2s animate__fast" action="https://formspree.io/f/xrbpabvg" method="POST"> 
     	<fieldset>
     		<label for="companyName"></label>
-    		<input type="text" name="companyName" placeholder="Company Name" aria-label="Company Name" autocomplete="company-name" required>
+    		<input class ="formformat" type="text" name="companyName" placeholder="Company Name" aria-label="Company Name" autocomplete="company-name" required>
     		
     		<label for="companyEmail"></label>
-    		<input type="text" name="companyEmail" placeholder="Company Email" aria-label="Company Email" autocomplete="company-email" required>
+    		<input class ="formformat" type="text" name="companyEmail" placeholder="Company Email" aria-label="Company Email" autocomplete="company-email" required>
     		
     		<label for="message"></label>
-    		<textarea id="message" name="message" placeholder="type a message" rows="4" cols="50" required></textarea>
+    		<textarea class="formformat" id="message" name="message" placeholder="type a message" rows="4" cols="50" required></textarea>
 
-    		<button type="submit">Send</button>
+    		<button type="submit" class="specialbutton specialbutton-primary specialbutton-ghost specialbutton-shine">Send</button>
 		</fieldset>
 
     </form>
 
 </main>
+
+	
+
 </body>
+
 </html>

@@ -1,0 +1,100 @@
+.specialbutton {
+  --hue: 190;
+  position: relative;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: hsl(var(--hue), 100%, 41%);
+  border: 1px solid hsl(var(--hue), 100%, 41%);
+  outline: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+.specialbutton:hover {
+  background: hsl(var(--hue), 100%, 31%);
+}
+.specialbutton-primary {
+  --hue: 187;
+}
+.specialbutton-ghost {
+  color: hsl(var(--hue), 100%, 41%);
+  background-color: transparent;
+  border-color: hsl(var(--hue), 100%, 41%);
+}
+.specialbutton-ghost:hover {
+  color: white;
+}
+.specialbutton-shine {
+  color: white;
+}
+.specialbutton-shine::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    hsla(var(--hue), 100%, 41%, 0.5),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+.specialbutton-shine:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 10px hsla(var(--hue), 100%, 41%, 0.5);
+}
+.specialbutton-shine:hover::before {
+  transform: translateX(100%);
+}
+
+
+.specialbutton:active:after {
+  background-position: -50% 0%;
+}
+
+/* Set styles for active glass button */
+.specialbutton:active {
+  translate: 0.01em 0.25em;
+  box-shadow: 0 -0.125em 0.25em #0002,
+    0 0.25em 0.25em hsl(var(--h) var(--s) var(--l) / 0.5),
+    0 0 0 0.1em hsl(var(--h) var(--s) var(--l) / 0.5),
+    0 0.175em 0.3em hsl(var(--h) var(--s) var(--l) / 0.8) inset,
+    0 -0.025em 0.175em hsl(var(--h) var(--s) var(--l) / 0.4) inset,
+    0 -0.25em 1em 0.3em hsl(var(--h) var(--s) var(--l) / 0.3) inset,
+    0 0.6em 0 hsl(var(--h) var(--s) var(--l) / 0.3) inset, 0 1em 0.5em #0004;
+  backdrop-filter: blur(0.08em);
+}
+
+/* Set height for before pseudo-element of active glass button */
+.specialbutton:active:before {
+  height: 1em;
+}
+
+
+
+.formformat
+{  --hue: 190;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid hsl(var(--hue), 100%, 41%);
+  outline: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+
+}
