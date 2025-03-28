@@ -28,10 +28,10 @@
   border-color: hsl(var(--hue), 100%, 41%);
 }
 .specialbutton-ghost:hover {
-  color: white;
+  color: hsl(var(--hue), 100%, 41%);
 }
 .specialbutton-shine {
-  color: white;
+  color: aquamarine;
 }
 .specialbutton-shine::before {
   position: absolute;
@@ -73,6 +73,7 @@
     0 -0.25em 1em 0.3em hsl(var(--h) var(--s) var(--l) / 0.3) inset,
     0 0.6em 0 hsl(var(--h) var(--s) var(--l) / 0.3) inset, 0 1em 0.5em #0004;
   backdrop-filter: blur(0.08em);
+  color: hsl(var(--hue), 100%, 41%);
 }
 
 /* Set height for before pseudo-element of active glass button */
