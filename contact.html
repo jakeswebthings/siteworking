@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" /> <!-- main css style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animations style sheet -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 <!-- custom css to override the animations --><style> 
 
 		h1 {
@@ -31,7 +30,6 @@
 		}
 		body {
 			text-align: center;
-		
 		}
 	
 	
@@ -46,24 +44,33 @@
 <body>
 	<main class="container">
 
-    <h1 class="animate__animated animate__fadeInDown animate__fast"> My Company Name </h1> <!-- important for SEO, h1 is indexed and used-->
+    <h1 class="animate__animated animate__fadeInDown"> Email Directly </h1> <!-- important for SEO, h1 is indexed and used-->
 
-    
+    <form class="animate__animated animate__fadeInUpBig animate__delay-1s animate__fast" action="https://formspree.io/f/xrbpabvg" method="POST"> 
+    	<fieldset>
+    		<label for="companyName"></label>
+    		<input class ="formformat" type="text" name="companyName" placeholder="Company Name" aria-label="Company Name" autocomplete="company-name" required>
+    		
+    		<label for="companyEmail"></label>
+    		<input class ="formformat" type="text" name="companyEmail" placeholder="Company Email" aria-label="Company Email" autocomplete="company-email" required>
+    		
+    		<label for="message"></label>
+    		<textarea class="formformat" id="message" name="message" placeholder="Message" rows="4" cols="50" required></textarea>
+
+    		<button type="submit" class="specialbutton specialbutton-primary specialbutton-ghost specialbutton-shine">Send</button>
+		</fieldset>
+
+    </form>
+
 </main>
 
-<ul class="animate__animated animate__fadeInDown">
-  <li><a href="index.html">Home</a></li>
-  <br>
-  <li><a href="index.html">News</a></li>
-  <br>
-  <li><a href="contact.html">Contact</a></li>
-  <br>
-  <li><a href="index.html">About</a></li>
-  <br>
-</ul>
-
+	<h3 class="animate__animated animate__fadeInRightBig animate__delay-2s animate__fast"> Responses will come directly from websitename.com </h3>
+	<h3 class="animate__animated animate__fadeInLeftBig animate__delay-3s animate__fast"> More text can go here! </h3>
+	
 
 </body>
 
+
 <footer><h4 class ="animate__animated animate__fadeInUpBig animate__delay-0.5s"> credits down here </h4></footer>
+
 </html>
