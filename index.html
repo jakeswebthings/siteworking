@@ -20,9 +20,10 @@
 	<meta property="og:image" content="https://www.thewebsite.com/example.jpg" /> <!-- image to be shown when the page is linked on social media -->
 <!-- used to tell search engines which URL is the main page of the site 
     <link rel="canonical" href="https://thewebsite.com" /> -->
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pico.min.css" /> <!-- main css style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- animations style sheet -->
-    <link rel="stylesheet" href="style.css" />
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 <!-- custom css to override the animations --><style> 
 
@@ -31,12 +32,16 @@
 		}
 		body {
 			text-align: center;
+			justify-content: center;
 		
 		}
 		p {
 			font-family: "Lucida Console", "Courier New", monospace;
 		}
-	
+
+		li {
+			display:inline-block;
+		}
 	
 	
     	
@@ -47,21 +52,24 @@
 </head>
 
 <body>
-	<main class="container">
+	<main class="animate__animated animate__fadeInDown animate__fast glasscard">
 
-    <h1 class="animate__animated animate__fadeInDown animate__fast"> My Company Name </h1> <!-- important for SEO, h1 is indexed and used-->
+    <p class="animate__animated animate__fadeInDown animate__fast"> My Company Name </p> <!-- important for SEO, h1 is indexed and used-->
 
     
 </main>
 
-<ul class="animate__animated animate__fadeIn animate__delay-1s animate__fast">
-  <li><p class="line-1 anim-typewriter"><a href="index.html">Home</a></p></li>
-  <br>
-  <li><p class="line-1 anim-typewriter"><a href="contact.html">Contact</a></p></li>
-  <br>
-  <li><p class="line-1 anim-typewriter"><a href="index.html">About</a></p></li>
-  <br>
+
+<br>
+<br>
+
+<ul class="glasscard">
+	<li><p class="glasscard"><a href="index.html">Home</a></p></li>
+	<li><p class="glasscard"><a href="contact.html">Contact</a></p></li>
 </ul>
+
+
+
 
 <footer class ="animate__animated animate__fadeInUpBig animate__delay-0.5s">credits down here</footer>
 
